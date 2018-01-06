@@ -1,0 +1,31 @@
+body{
+    background: black;
+}
+
+header{
+    padding: 30px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: #fe3b3b;
+    text-decoration: none;
+}
+
+.container{
+    background: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+header a.active{
+    color: #fe3b3b;
+}
