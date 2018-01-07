@@ -1,21 +1,21 @@
-body{
+body {
     background: black;
 }
 
-header{
+header {
     padding: 30px;
 }
 
-a{
+a {
     color: black;
 }
 
-a:hover{
+a:hover {
     color: #fe3b3b;
     text-decoration: none;
 }
 
-.container{
+.container {
     background: white;
 }
 
@@ -26,6 +26,78 @@ header nav ul {
     font-weight: 500;
 }
 
-header a.active{
+nav ul li a {
+    padding: 15px;
+}
+
+header a.active {
     color: #fe3b3b;
+}
+
+.dropdown, .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2.25rem;
+    min-width: 15rem;
+    background: black;
+}
+
+.dropdown-content a {
+    color: #9a9ea3;
+}
+.dropdown-content li {
+    padding: 1rem;
+}
+ul.dropdown-content, ul.dropdown-submenu-content {
+    padding: 0;
+}
+
+.dropdown-content a.active, .dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-submenu:hover .dropdown-submenu-content {
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+    left: 15rem;
+}
+
+.dropdown-submenu-content {
+    display: none;
+}
+
+.dropdown-submenu-wrapper {
+    background: black;
+    min-width: 15rem;
+    position: absolute;
+    left: 15rem;
+    top: -0.25rem;
+}
+
+.header-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-newsletter span:nth-child(1){
+    color: #fe3b3b;
+    font-size: small;
+}
+
+.header-newsletter span:nth-child(2){
+    color: #bdbdbd;
+    font-size: x-small;
 }
